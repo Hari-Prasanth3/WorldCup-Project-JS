@@ -39,7 +39,7 @@ async function matches() {
         a.preventDefault()
 
         // fetch(`https://api.cricapi.com/v1/match_scorecard?apikey=a2d55738-6402-4c62-af02-aabe3a89ad9c&id=${x.id}`)
-        const card = await fetch(`./sample.json`)
+        const card = await fetch(`https://api.cricapi.com/v1/match_scorecard?apikey=a2d55738-6402-4c62-af02-aabe3a89ad9c&id=${x.id}`)
         const cards = await card.json();
 
 
