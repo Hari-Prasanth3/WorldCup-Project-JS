@@ -174,7 +174,7 @@ async function matches() {
             let team2 = team[1];
             // console.log(team2);
 
-            const fetch5 = await fetch(`/team.json`);
+            const fetch5 = await fetch(`./team.json`);
             const data = await fetch5.json();
 
             if (data.status === "success") {
@@ -230,7 +230,7 @@ async function matches() {
 matches();
 
 document.getElementById("point-tables").addEventListener("click", async (a) => {
-  const point = await fetch(`/point-table.json`);
+  const point = await fetch(`./point-table.json`);
   // fetch(`/sample.json`)
   const points = await point.json();
 
@@ -289,7 +289,7 @@ document.getElementById("point-tables").addEventListener("click", async (a) => {
   }
 });
 async function team() {
-  const profile = await fetch(`/team.json`);
+  const profile = await fetch(`./team.json`);
   // fetch(`/sample.json`)
   const profiles = await profile.json();
 
